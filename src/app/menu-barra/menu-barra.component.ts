@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {articuloFamilia} from './menu/articuloFamilia';
-import {ArticulosFamilias} from './menu/ArticulosFamilias';
+
 
 
 @Component({
