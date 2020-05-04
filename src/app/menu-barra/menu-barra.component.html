@@ -1,3 +1,4 @@
+
  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="#">Welcome to Angular</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,3 +28,28 @@
     </form>
   </div>
 </nav>
+<br>
+<br>
+<br>
+<p style="background-color:lightblue"><strong>
+  Aqui encontraras todos nuestros productos disponibles!
+  </strong>
+</p>
+<br>
+
+<table class="table table-striped"> 
+  <thead>
+  <tr>
+    <th> de articulo</th>
+    <th> Nombre</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let art of listaArt">
+     <td>{{art.IdArticuloFamilia}}</td>
+     <td>{{art.Nombre}}</td> 
+
+   </tr> 
+  </tbody>
+</table>
+
