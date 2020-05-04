@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{} from './app/';
+import articuloFamilia from '..';
 
 
 @Component({
