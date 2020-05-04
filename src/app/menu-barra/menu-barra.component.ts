@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import articuloFamilia from '..';
+import{ ArticulosFamilias} from './models/menu';
+import { articuloFamilia } from '../models/articuloFamilia';
 
 
 @Component({
@@ -9,12 +10,12 @@ import articuloFamilia from '..';
 )
 export class MenuBarraComponent implements OnInit {
 
-  listaArt;
+  listaArt:articuloFamilia[];
 
   constructor() { }
 
   ngOnInit() {
-  
+  this.listaArt=ArticulosFamilias;
   }
 
 }
