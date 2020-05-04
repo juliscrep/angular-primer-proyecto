@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import{} from './app/';
 
 
 @Component({
@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 )
 export class MenuBarraComponent implements OnInit {
 
-  listaArt: articuloFamilia[];
+  listaArt;
 
   constructor() { }
 
   ngOnInit() {
-    this.listaArt= ArticulosFamilias;
+  
   }
 
 }
