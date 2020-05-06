@@ -11,11 +11,12 @@ import { articuloFamilia } from './../models/articuloFamilia';
 export class MenuBarraComponent implements OnInit {
 
   listaArt:articuloFamilia[];
-
+  mensaje:string;
   constructor() { }
 
   ngOnInit() {
   this.listaArt=ArticulosFamilias;
+  this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
   }
 
 }
