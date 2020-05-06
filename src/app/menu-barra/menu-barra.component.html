@@ -30,7 +30,7 @@
 </nav>
 </div>
 <div class="container">
-<h3 *ngIf="verMensaje" style="background-color:lightblue" >{{mensaje}}
+<h3 *ngIf="verMensaje"  [style.color]="colorP" style="background-color:lightblue" >{{mensaje}}
 </h3>
 </div>
 <img [src]="logo"/>
