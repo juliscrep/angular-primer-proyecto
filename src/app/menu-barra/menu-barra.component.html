@@ -30,10 +30,8 @@
 </nav>
 </div>
 <div class="container">
-<p style="background-color:lightblue"><strong>
-  {{mensaje}}
-  </strong>
-</p>
+<h3 *ngIf="verMensaje" style="background-color:lightblue" >{{mensaje}}
+</h3>
 </div>
 
 <table class="table table-striped"> 

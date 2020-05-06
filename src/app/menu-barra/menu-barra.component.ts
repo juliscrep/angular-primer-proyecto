@@ -12,6 +12,7 @@ export class MenuBarraComponent implements OnInit {
 
   listaArt:articuloFamilia[];
   mensaje:string;
+  verMensaje=true;
   constructor() { }
 
   ngOnInit() {
