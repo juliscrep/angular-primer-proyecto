@@ -24,7 +24,8 @@ export class MenuBarraComponent implements OnInit {
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
   }
 mostrarGrilla(){
-   this.verTabla=!this.verTabla;
    this.mensajeB= this.verTabla? 'Mostrar grilla': 'Ocultar grilla';
+   this.verTabla=!this.verTabla;
+  
 }
 }
