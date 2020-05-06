@@ -15,11 +15,15 @@ export class MenuBarraComponent implements OnInit {
   verMensaje=true;
   logo= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPYT_kGEUZhl77IH4pGGVsFwxtNZmM6GUYMH5v51TjAf4OT2p0&usqp=CAU"; 
   colorP="green";
+  verTabla=false;
+  mensajeB= 'Mostrar grilla';
   constructor() { }
 
   ngOnInit() {
   this.listaArt=ArticulosFamilias;
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
   }
-
+mostrarGrilla(){
+   this.verTabla=true;
+}
 }

@@ -36,9 +36,10 @@
 <img [src]="logo"/>
 <br>
 <br>
-
-
-<table class="table table-striped"> 
+<input type="button" (click)="mostrarGrilla()" value={{mensajeB}}/>
+<br>
+<br>
+<table class="table table-striped" *ngIf="verTabla"> 
   <thead class="table-dark">
   <tr>
     <th> Id de articulo</th>
