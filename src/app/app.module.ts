@@ -6,9 +6,15 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
 import { MenuBarraComponent } from './menu-barra/menu-barra.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
+    {    path: 'listaArticulos', component: MenuBarraComponent}
+    {
+
+    }
+  ]) ],
   declarations: [ AppComponent, HelloComponent, MenuBarraComponent ],
   bootstrap:    [ AppComponent,MenuBarraComponent ]
 })
