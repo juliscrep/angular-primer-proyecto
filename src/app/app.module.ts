@@ -11,7 +11,7 @@ import { ArticulosCargaComponent } from './articulos-carga/articulos-carga.compo
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
-    {  path: 'listaArticulos/:id', component: MenuBarraComponent},
+    { path: 'listaArticulos/:id', component: MenuBarraComponent},
     { path: 'listaArticulos', component: MenuBarraComponent},
     { path: 'cargaArticulos', component: ArticulosCargaComponent},
     {path:"Principal", component: AppComponent},
