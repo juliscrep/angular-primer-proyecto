@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{ ArticulosFamilias} from './../models/menu';
 import { articuloFamilia } from './../models/articuloFamilia';
+import {ActivatedRoute} from '@angular/router';
 
 
 @Component({
@@ -17,11 +18,14 @@ export class MenuBarraComponent implements OnInit {
   colorP="green";
   verTabla=false;
   mensajeB= 'Mostrar grilla';
-  constructor() { }
+  id:number;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
   this.listaArt=ArticulosFamilias;
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
+  this.id= +this.route.snapshot.paramMap.get("id");
+   
   }
 mostrarGrilla(){
    this.mensajeB= this.verTabla? 'Mostrar grilla': 'Ocultar grilla';
