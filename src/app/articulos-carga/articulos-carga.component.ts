@@ -13,6 +13,10 @@ export class ArticulosCargaComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.fg=this.fb.group({
+    idArticulo: [''],
+    Nombre:['']
+    })
   }
 
 }
