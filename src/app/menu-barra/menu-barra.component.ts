@@ -10,7 +10,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./menu-barra.component.css']}
 )
 export class MenuBarraComponent implements OnInit {
-
+   id:string;
   listaArt:articuloFamilia[];
   mensaje:string;
   verMensaje=true;
@@ -18,10 +18,10 @@ export class MenuBarraComponent implements OnInit {
   colorP="green";
   verTabla=false;
   mensajeB= 'Mostrar grilla';
-  id:number;
+ 
   constructor(private route: ActivatedRoute) { }
 
-  ngOnInit() {
+  ngOnInit() : void{
   this.listaArt=ArticulosFamilias;
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
   this.id= +this.route.snapshot.paramMap.get("id");
