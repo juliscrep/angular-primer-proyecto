@@ -8,7 +8,9 @@ import {FormBuilder,Validators,FormGroup,FormsModule} from '@angular/forms'
 })
 export class ArticulosCargaComponent implements OnInit {
 
-  constructor() { }
+  fg: FormGroup;
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
   }
