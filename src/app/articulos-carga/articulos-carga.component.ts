@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder,Validators,FormGroup,FormsModule} from '@angular/forms'
 
 @Component({
   selector: 'app-articulos-carga',
