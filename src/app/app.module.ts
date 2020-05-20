@@ -7,15 +7,15 @@ import { HelloComponent } from './hello.component';
 
 import { MenuBarraComponent } from './menu-barra/menu-barra.component';
 import { RouterModule } from '@angular/router';
+import { ArticulosCargaComponent } from './articulos-carga/articulos-carga.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
-    {    path: 'listaArticulos', component: MenuBarraComponent}
-    {
-
-    }
+    {    path: 'listaArticulos', component: MenuBarraComponent},
+    { path: 'cargaArticulos', component: ArticulosCargaComponent},
+    { path: ' ', component: AppComponent}
   ]) ],
-  declarations: [ AppComponent, HelloComponent, MenuBarraComponent ],
+  declarations: [ AppComponent, HelloComponent, MenuBarraComponent, ArticulosCargaComponent ],
   bootstrap:    [ AppComponent,MenuBarraComponent ]
 })
 export class AppModule { }
