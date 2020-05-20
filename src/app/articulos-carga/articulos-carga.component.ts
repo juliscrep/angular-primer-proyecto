@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder,Validators,FormGroup,FormsModule} from '@angular/forms'
+import{ ArticulosFamilias} from './../models/menu';
+import { articuloFamilia } from './../models/articuloFamilia';
 
 @Component({
   selector: 'app-articulos-carga',
@@ -14,9 +16,12 @@ export class ArticulosCargaComponent implements OnInit {
 
   ngOnInit() {
     this.fg=this.fb.group({
-    idArticulo: [''],
+    IdArticuloFamilia: [''],
     Nombre:['']
     })
   }
+
+grabar(){
+ArticulosFamilias.push({IdArticuloFamilia: Number(this.fg.value.IdArticuloFamilia), Nombre: this.fg.value.Nombre})}
 
 }
