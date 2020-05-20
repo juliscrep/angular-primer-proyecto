@@ -13,7 +13,8 @@ import { ArticulosCargaComponent } from './articulos-carga/articulos-carga.compo
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
     {    path: 'listaArticulos', component: MenuBarraComponent},
     { path: 'cargaArticulos', component: ArticulosCargaComponent},
-    { path: ' ', component: AppComponent}
+    {path:"Principal", component: AppComponent},
+    {path:" ", component: AppComponent}
   ]) ],
   declarations: [ AppComponent, HelloComponent, MenuBarraComponent, ArticulosCargaComponent ],
   bootstrap:    [ AppComponent,MenuBarraComponent ]
