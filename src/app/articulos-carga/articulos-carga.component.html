@@ -7,7 +7,8 @@
 </div>
 <div class="form-group">
 <label for="IdArticuloFamilia"> Nombre </label> 
-<input type="text" class="form-control" formControlName="Nombre">
+<input type="text" class="form-control" formControlName="Nombre" aria-describedby="helpNom" placeholder=" ">
+<small id="helpNom" class="" *ngIf="fg.controls.Nombre.invalid &&(fg.controls.Nombre.dirty || fg.controls.Nombre.touched)">Nombre de familia</small>
 </div>
 
 <input type="button" (click)="grabar()" value="Grabar">
