@@ -1,13 +1,15 @@
+
 <form [formGroup] = "fg">
-<br>
-id articulo
-<input formControlName= "IdArticuloFamilia">
-<br>
-<br>
-Nombre articulo
-<input formControlName= "Nombre">
-<br>
-<br>
+<div class="form-group">
+<label for="IdArticuloFamilia"> Id articulo </label> 
+<input type="text" class="form-control" formControlName= "IdArticuloFamilia" aria-describedby="helpId" placeholder=" ">
+<small id="helpId" class="" *ngIf="fg.controls.IdArticuloFamilia.invalid &&(fg.controls.IdArticuloFamilia.dirty || fg.controls.IdArticuloFamilia.touched)">Numerico</small>
+</div>
+<div class="form-group">
+<label for="IdArticuloFamilia"> Nombre </label> 
+<input type="text" class="form-control" formControlName="Nombre">
+</div>
+
 <input type="button" (click)="grabar()" value="Grabar">
 
 </form>
