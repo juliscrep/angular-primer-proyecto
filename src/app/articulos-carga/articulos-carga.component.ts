@@ -23,12 +23,14 @@ export class ArticulosCargaComponent implements OnInit {
 
 grabar(){
   if(this.fg.valid){
-   console.log(`id:${this.fg.value.IdArticuloFamilia} Nombre: ${this.fg.value.Nombre}`)};
+   console.log(`id:${this.fg.value.IdArticuloFamilia} Nombre: ${this.fg.value.Nombre}`)
 ArticulosFamilias.push({
   IdArticuloFamilia: Number(this.fg.value.IdArticuloFamilia), 
   Nombre: this.fg.value.Nombre});
   window.alert('se ha grabado exitosamente!');
- }  
-  
-  }
+ }else{
+    window.alert('ingrese un valor correcto!');
+ }
+}
 
+}
