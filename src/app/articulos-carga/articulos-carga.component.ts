@@ -16,8 +16,8 @@ export class ArticulosCargaComponent implements OnInit {
 
   ngOnInit() {
     this.fg=this.fb.group({
-    IdArticuloFamilia: [''],
-    Nombre:['']
+    IdArticuloFamilia: ['',[Validators.required,Validators.maxLength(5),Validators.pattern('^[0-9]*$')]],
+    Nombre:['',[Validators.required]]
     })
   }
 
