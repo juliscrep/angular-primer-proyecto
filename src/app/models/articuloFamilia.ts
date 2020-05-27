@@ -1,5 +1,5 @@
 export class articuloFamilia {
 
-  IdArticuloFamilia: number;
+  IdArticuloFamilia: number
   Nombre: string;
   }
