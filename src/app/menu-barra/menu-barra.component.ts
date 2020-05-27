@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import{ ArticulosFamilias} from './../models/menu';
 import { articuloFamilia } from './../models/articuloFamilia';
 import {ActivatedRoute} from '@angular/router';
+import { ArticulosService } from '../articulos.service';
 
 
 @Component({
   selector: 'app-menu-barra',
   templateUrl: './menu-barra.component.html',
-  styleUrls: ['./menu-barra.component.css']}
+  styleUrls: ['./menu-barra.component.css'],
+  providers: [ArticulosService]}
 )
 export class MenuBarraComponent implements OnInit {
    id:string;
