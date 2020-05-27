@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { articuloFamilia } from './models/articuloFamilia';
 import {HttpClient} from '@angular/common/http'
 import {Observable} from 'rxjs'
+import{IArticulo} from ''
 
 @Injectable( {
     providedId: 'root'
