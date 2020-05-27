@@ -15,7 +15,7 @@ export class ArticulosService {
   constructor(private http: HttpClient) {}
   
   getArticulos(): Observable<articuloFamilia[]>{
-    return this.http.get<articuloFamilia[]>('http://labsys.frc.utn.edu.ar:8080/api/ArticulosFamilias');
+    return this.http.get<articuloFamilia[]>(this.articulosUrl);
   }
 
   

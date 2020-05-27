@@ -24,6 +24,7 @@ export class MenuBarraComponent implements OnInit {
   constructor(private articulosService: ArticulosService) { }
 
   ngOnInit() : void{
+    this.listaArt= [];
   this.articulosService.getArticulos().subscribe(
     {next:articuloFamilias=> this.listaArt=articuloFamilias,
     error: err=> console.log(err)} );
