@@ -16,7 +16,7 @@ export class ArticulosService {
   
   getArticulos(): Observable<articuloFamilia[]>{
     return this.http.get<articuloFamilia[]>(this.articulosUrl);
-  }
+  };
 
   
 
