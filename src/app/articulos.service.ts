@@ -5,7 +5,7 @@ import {Observable} from 'rxjs'
 
 
 @Injectable( {
-    providedId: 'root'
+    providedIn: "root"
   }
 )
 export class ArticulosService {
