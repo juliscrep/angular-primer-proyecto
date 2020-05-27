@@ -8,6 +8,7 @@ import { HelloComponent } from './hello.component';
 import { MenuBarraComponent } from './menu-barra/menu-barra.component';
 import { RouterModule } from '@angular/router';
 import { ArticulosCargaComponent } from './articulos-carga/articulos-carga.component';
+import { ArticulosService } from './articulos.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot([
@@ -18,6 +19,7 @@ import { ArticulosCargaComponent } from './articulos-carga/articulos-carga.compo
     {path:" ", component: AppComponent}
   ]) ],
   declarations: [ AppComponent, HelloComponent, MenuBarraComponent, ArticulosCargaComponent ],
-  bootstrap:    [ AppComponent,MenuBarraComponent ]
+  bootstrap:    [ AppComponent,MenuBarraComponent ],
+  providers: [ArticulosService]
 })
 export class AppModule { }
