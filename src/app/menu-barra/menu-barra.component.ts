@@ -21,10 +21,10 @@ export class MenuBarraComponent implements OnInit {
   verTabla=false;
   mensajeB= 'Mostrar grilla';
  
-  constructor(private route: ActivatedRoute) { }
+  constructor(private articulosService: ArticulosService) { }
 
   ngOnInit() : void{
-  this.listaArt=ArticulosFamilias;
+  this.listaArt=this.articulosService.getArticulos();
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
   this.id= +this.route.snapshot.paramMap.get("id");
    
