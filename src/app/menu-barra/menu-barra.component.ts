@@ -26,8 +26,7 @@ export class MenuBarraComponent implements OnInit {
   ngOnInit() : void{
   this.listaArt=this.articulosService.getArticulos();
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
-  this.id= +this.route.snapshot.paramMap.get("id");
-   
+     
   }
 mostrarGrilla(){
    this.mensajeB= this.verTabla? 'Mostrar grilla': 'Ocultar grilla';
