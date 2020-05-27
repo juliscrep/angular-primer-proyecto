@@ -25,9 +25,11 @@ export class MenuBarraComponent implements OnInit {
 
   ngOnInit() : void{
     this.listaArt= [];
-  this.articulosService.getArticulos().subscribe(
+    this.articulosService.getArticulos().subscribe(
     {next:articuloFamilias=> this.listaArt=articuloFamilias,
-    error: err=> console.log(err)} );
+    error: err=> console.log(err)
+    }
+    );
   
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
      
