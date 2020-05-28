@@ -14,7 +14,7 @@ export class ArticulosService {
   
    getArticulos():Observable<articuloFamilia[]>{
     return this.http.get<articuloFamilia[]>('http://labsys.frc.utn.edu.ar:8080/api/ArticulosFamilias');
-  };
+  }
 
   
 
