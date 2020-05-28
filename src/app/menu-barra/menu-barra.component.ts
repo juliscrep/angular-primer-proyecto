@@ -23,7 +23,7 @@ export class MenuBarraComponent implements OnInit {
  
   constructor(private articulosservice: ArticulosService) { }
 
-  ngOnInit(){
+  ngOnInit():void{
    this.getDatos();
   
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
