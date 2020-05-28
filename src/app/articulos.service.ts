@@ -9,11 +9,14 @@ import {Observable} from 'rxjs'
   }
 )
 export class ArticulosService {
- 
-  constructor(private http: HttpClient) {}
+  Curl:string ;
+
+  constructor(private http: HttpClient) {
+    this.Curl="http://labsys.frc.utn.edu.ar:8080/api/ArticulosFamilias";
+  }
   
    getArticulos():Observable<articuloFamilia[]>{
-    return this.http.get<articuloFamilia[]>('http://labsys.frc.utn.edu.ar:8080/api/ArticulosFamilias');
+    return this.http.get<articuloFamilia[]>(this.Curl);
   }
 
   
