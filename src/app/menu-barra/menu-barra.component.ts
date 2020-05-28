@@ -14,7 +14,7 @@ import { ArticulosService } from '../articulos.service';
 export class MenuBarraComponent implements OnInit {
    id:string;
   listaArt:articuloFamilia[]=[];
-  mensaje:string;
+   mensaje:string;
   verMensaje=true;
   logo= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPYT_kGEUZhl77IH4pGGVsFwxtNZmM6GUYMH5v51TjAf4OT2p0&usqp=CAU"; 
   colorP="green";
@@ -37,8 +37,7 @@ mostrarGrilla(){
 
 getDatos(){
 
-    this.articulosService.getArticulos().subscribe((res:articuloFamilia[])
-   => {this.listaArt=res});
+this.articulosService.getArticulos().subscribe((res:articuloFamilia[])=> {this.listaArt=res});
    // {next:articuloFamilias=> this.listaArt=articuloFamilias,
     
 }
