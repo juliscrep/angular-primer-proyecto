@@ -37,10 +37,10 @@ mostrarGrilla(){
 
 getDatos(){
 
-    this.articulosService.getArticulos().subscribe(
-    {next:articuloFamilias=> this.listaArt=articuloFamilias,
-    error: err=> console.log(err)
-    });
+    this.articulosService.getArticulos().subscribe((res:articuloFamilia[])
+   => {this.listaArt=res});
+   // {next:articuloFamilias=> this.listaArt=articuloFamilias,
+    
 }
 
 }
