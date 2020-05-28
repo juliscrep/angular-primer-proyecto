@@ -1,3 +1,4 @@
+
 export class articuloFamilia {
 
   IdArticuloFamilia: number
