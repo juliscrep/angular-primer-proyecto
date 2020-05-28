@@ -13,7 +13,7 @@ import { ArticulosService } from '../articulos.service';
 )
 export class MenuBarraComponent implements OnInit {
    id:string;
-  listaArt:articuloFamilia[];
+  listaArt:articuloFamilia[]=[];
   mensaje:string;
   verMensaje=true;
   logo= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPYT_kGEUZhl77IH4pGGVsFwxtNZmM6GUYMH5v51TjAf4OT2p0&usqp=CAU"; 
@@ -23,9 +23,8 @@ export class MenuBarraComponent implements OnInit {
  
   constructor(private articulosService: ArticulosService) { }
 
-  ngOnInit() : void{
-    this.listaArt= [];
-    
+  ngOnInit(){
+   
     this.articulosService.getArticulos().subscribe(
     {next:articuloFamilias=> this.listaArt=articuloFamilias,
     error: err=> console.log(err)
