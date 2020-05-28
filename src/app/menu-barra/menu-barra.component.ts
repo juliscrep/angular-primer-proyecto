@@ -21,7 +21,7 @@ export class MenuBarraComponent implements OnInit {
   verTabla=false;
   mensajeB= 'Mostrar grilla';
  
-  constructor(private articulosService: ArticulosService) { }
+  constructor(private articulosservice: ArticulosService) { }
 
   ngOnInit(){
    this.getDatos();
@@ -37,7 +37,7 @@ mostrarGrilla(){
 
 getDatos(){
 
-this.articulosService.getArticulos().subscribe((res:articuloFamilia[])=> {this.listaArt=res});
+this.articulosservice.getArticulos().subscribe((res:articuloFamilia[])=> {this.listaArt=res});
    // {next:articuloFamilias=> this.listaArt=articuloFamilias,
     
 }
