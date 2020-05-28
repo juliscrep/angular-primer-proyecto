@@ -24,12 +24,7 @@ export class MenuBarraComponent implements OnInit {
   constructor(private articulosService: ArticulosService) { }
 
   ngOnInit(){
-   
-    this.articulosService.getArticulos().subscribe(
-    {next:articuloFamilias=> this.listaArt=articuloFamilias,
-    error: err=> console.log(err)
-    }
-    );
+   this.getDatos();
   
   this.mensaje="Aqui encontraras todos nuestros productos disponibles!";
      
@@ -39,4 +34,13 @@ mostrarGrilla(){
    this.verTabla=!this.verTabla;
   
 }
+
+getDatos(){
+
+    this.articulosService.getArticulos().subscribe(
+    {next:articuloFamilias=> this.listaArt=articuloFamilias,
+    error: err=> console.log(err)
+    });
+}
+
 }
